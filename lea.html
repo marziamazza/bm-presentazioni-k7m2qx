@@ -499,6 +499,12 @@
   .fq .a::before{content:"\2192";position:absolute;left:5px;color:var(--pos);
                  font-family:var(--bm-font-data)}
 
+  /* prezzo pieno barrato sopra la cifra della soluzione intelligente */
+  .opt .was{font-family:var(--bm-font-data);font-size:12.5px;letter-spacing:.02em;
+            color:#8a8690;margin-top:12px;line-height:1.2}
+  .opt .was s{text-decoration-thickness:1.5px;text-decoration-color:#b9b4be}
+  .opt .was + .pr{margin-top:2px}
+
   /* tre opzioni di pagamento invece di due */
   .opts.three{grid-template-columns:repeat(3,1fr);gap:16px}
   .opts.three .opt{padding:22px 20px}
@@ -1110,6 +1116,7 @@
         </div>
         <div class="opt best">
           <div class="tg"><svg class="ic" style="width:15px;height:15px"><use href="#ic-star"/></svg>Soluzione intelligente</div>
+          <div class="was">anzich&eacute; <s>9.756&euro;</s></div>
           <div class="pr"><b>8.497&euro;</b> IVA compresa<br>tutto subito</div>
           <div class="ds">Un solo pagamento all&rsquo;attivazione.</div>
           <div class="save">1.259&euro; di risparmio rispetto alla rateale.</div>
