@@ -499,6 +499,10 @@
   .fq .a::before{content:"\2192";position:absolute;left:5px;color:var(--pos);
                  font-family:var(--bm-font-data)}
 
+  /* la cifra del valore non va mai a capo («10.000&euro; + IVA» su una riga sola) */
+  .value-list li .vv{white-space:nowrap;padding-left:18px}
+  .value-list li span:first-child{min-width:0}
+
   /* prezzo pieno barrato sopra la cifra della soluzione intelligente */
   .opt .was{font-family:var(--bm-font-data);font-size:12.5px;letter-spacing:.02em;
             color:#8a8690;margin-top:12px;line-height:1.2}
@@ -1115,11 +1119,11 @@
 <div class="eyebrow">Mettiamo tutto in fila</div>
       <h2>Ecco quanto vale, davvero.</h2>
       <ul class="value-list">
-        <li><span>Percorso Beauty Accelerator, 6 mesi + 3, con tutto il supporto</span><span class="vv">valore pieno</span></li>
+        <li><span>Percorso Beauty Accelerator, 6 mesi + 3, con tutto il supporto</span><span class="vv">7.000&euro; + IVA</span></li>
         <li><span>Bonus 1 &middot; Beauty Finance</span><span class="vv">1.000&euro; + IVA</span></li>
         <li><span>Bonus 2 &middot; Beauty Budget</span><span class="vv">3.000&euro; + IVA</span></li>
         <li><span>Bonus 3 &middot; Manuale delle Obiezioni</span><span class="vv">3.000&euro; + IVA</span></li>
-        <li class="tot"><b>Prezzo di listino attuale</b><span class="vv">7.000&euro; + IVA</span></li>
+        <li class="tot"><b>Valore totale di quello che ricevi</b><span class="vv">14.000&euro; + IVA</span></li>
       </ul>
     </div>
     <div class="s-foot"><span class="num">30</span><span><b>www.beautymentoring.it</b></span></div>

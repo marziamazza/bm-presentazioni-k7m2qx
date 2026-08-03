@@ -499,6 +499,10 @@
   .fq .a::before{content:"\2192";position:absolute;left:5px;color:var(--pos);
                  font-family:var(--bm-font-data)}
 
+  /* la cifra del valore non va mai a capo («10.000&euro; + IVA» su una riga sola) */
+  .value-list li .vv{white-space:nowrap;padding-left:18px}
+  .value-list li span:first-child{min-width:0}
+
   /* prezzo pieno barrato sopra la cifra della soluzione intelligente */
   .opt .was{font-family:var(--bm-font-data);font-size:12.5px;letter-spacing:.02em;
             color:#8a8690;margin-top:12px;line-height:1.2}
@@ -1091,15 +1095,15 @@
 <div class="eyebrow">Mettiamo tutto in fila</div>
       <h2>Ecco quanto vale, davvero.</h2>
       <ul class="value-list">
-        <li><span>Percorso <b>Beauty Accelerator TEAM</b> completo, gi&agrave; compreso</span><span class="vv">valore pieno</span></li>
+        <li><span>Percorso <b>Beauty Accelerator</b> completo, gi&agrave; compreso</span><span class="vv">7.000&euro; + IVA</span></li>
         <li><span>Track <b>Leadership &amp; Team</b> &middot; 5 blocchi + template operativi</span><span class="vv">3.000&euro; + IVA</span></li>
-        <li><span>Percorso <b>Leadership Authority TEAM</b>, 12 mesi di affiancamento</span><span class="vv">valore pieno</span></li>
+        <li><span>Percorso <b>Leadership Authority TEAM</b>, 12 mesi di affiancamento</span><span class="vv">10.000&euro; + IVA</span></li>
         <li><span>Bonus 1 &middot; Beauty Finance &laquo;Open Day&raquo;</span><span class="vv">1.000&euro; + IVA</span></li>
         <li><span>Bonus 2 &middot; Sistema Piano Vendite e Nurturing</span><span class="vv">1.000&euro; + IVA</span></li>
         <li><span>Bonus 3 &middot; Gli Annuali di Marzia</span><span class="vv">2.000&euro; + IVA</span></li>
         <li><span>Bonus 4 &middot; Accordo Scritto per la Cliente</span><span class="vv">1.000&euro; + IVA</span></li>
         <li><span>Bonus 5 &middot; Marketing Fatto per Te</span><span class="vv">1.000&euro; + IVA</span></li>
-        <li class="tot"><b>Prezzo di listino attuale</b><span class="vv">16.000&euro; + IVA</span></li>
+        <li class="tot"><b>Valore totale di quello che ricevi</b><span class="vv">26.000&euro; + IVA</span></li>
       </ul>
     </div>
     <div class="s-foot"><span class="num">31</span><span><b>www.beautymentoring.it</b></span></div>
